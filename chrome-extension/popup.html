@@ -3,40 +3,73 @@
 <head>
     <title>Popup</title>
     <link href="popup.css" rel="stylesheet">
+    <script src="jquery-2.0.3.min.js"></script>
     <script src="background.js"></script>
     <script src="popup.js"></script>
 </head>
 <body>
-    <h1>Encyclonospace Iranica</h1>
+    <h1 class="title">Encyclonospace Iranica</h1>
     <div role="main">
-        <ul class="widgets">
-            <li class="clock time-now">
-                <span class="hour">0</span>
-                <span class="minute">4</span>
-                <span class="second">36</span>
-            </li>
-            <li class="clock session-time">
-                <span class="hour">0</span>
-                <span class="minute">4</span>
-                <span class="second">36</span>
-            </li>
-            <li class="list contributors">
-                <ul>
-                    <li>Mani Nilchiani</li>
-                    <li>Nooshin Rostami</li>
-                    <li>Sepand Ansari</li>
-                    <li>Mo Salemy</li>
-                    <li>Some other dude</li>
-                    <li>And the other dude</li>
-                    <li>Superman</li>
-                    <li>Printed Matter</li>
+        <div class="page">
+            <ul class="widgets">
+                <li class="clock time-now">
+                    <header>
+                        <h3>time now</h3>
+                    </header>
+                    <section class="widget-content">
+                        <span class="hour">0</span>
+                        <span class="minute">4</span>
+                        <span class="second">36</span>
+                    </section>
+                </li>
+                <li class="clock session-time">
+                    <header>
+                        <h3>session timer</h3>
+                    </header>
+                    <section class="widget-content">
+                        <span class="hour">0</span>
+                        <span class="minute">4</span>
+                        <span class="second">36</span>
+                    </section>
+                </li>
+                <li class="list contributors">
+                    <header>
+                        <h3>Contributors</h3>
+                    </header>
+                    <section class="widget-content">
+                        <ul>
+                            <li>Mani Nilchiani</li>
+                            <li>Nooshin Rostami</li>
+                            <li>Sepand Ansari</li>
+                            <li>Mo Salemy</li>
+                            <li>Some other dude</li>
+                            <li>And the other dude</li>
+                            <li>Superman</li>
+                            <li>Printed Matter</li>
+                        </ul>
+                    </section>
+                </li>
+                <li class="search">
+                    <header>
+                        <h3>wikipedia</h3>
+                    </header>
+                    <section class="widget-content">
+                        <input type="text" placeholder="Wikipedia">
+                        <button type="submit" value="kgh jkhg "></button>
+                    </section>
+
+                </li>
+            </ul>
+        </div><!-- .page -->
+        <div class="pagination-outer">
+            <div class="pagination-wrapper">
+                <ul class="pagination">
+                    <li class="active"></li>
+                    <li></li>
                 </ul>
-            </li>
-            <li class="search">
-                <input type="text" placeholder="Wikipedia">
-                <button type="submit" value="kgh jkhg "></button>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </div>
+
+    </div><!-- .main -->
 </body>
 </html>

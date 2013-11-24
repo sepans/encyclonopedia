@@ -7,7 +7,7 @@
   },
   "page_action" :
   {
-    "default_icon" : "",
+    "default_icon" : "img/icon38.png",
     "default_title" : "Encyclonopedia Iranica"
   },
   "content_scripts" : [
@@ -21,9 +21,11 @@
       "all_frames" : false
     }
   ],
+  
   "icons" : {
-    "48" : "",
-    "128" : ""
+    "19" : "img/icon19.png",
+    "38" : "img/icon38.png"
   },
+  
   "manifest_version": 2
 }

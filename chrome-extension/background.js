@@ -69,3 +69,4 @@ chrome.webRequest.onBeforeRequest.addListener(
     },
     // extraInfoSpec
     ["blocking"]);
+

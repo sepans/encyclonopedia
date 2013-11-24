@@ -71,29 +71,111 @@ body {
 h1, h2, h3, h3, h5, h6 {
     margin-bottom: 10px;
 }
+h1.title {
+    float: left;
+    width: 100%;
+    clear: both;
+}
 ul.widgets {
     float: left;
     width: 100%;
     float: left;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-fill: auto;
+    column-fill: auto;
 }
 ul.widgets li {
-    display: inline-block;
+    display: block;
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
-    padding: 20px;
-    margin: 10px 10px 0 0;
     border: 1px solid black;
     overflow: scroll;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    margin: 0 2px 15px;
+    position: relative;
+
+
 }
 ul.widgets li:hover {
     background-color: rgba(0, 0, 0, 1);
     color: rgba(255, 255, 255, 1);
 }
+ul.widgets li>header {
+    background-color: rgba(0,0,0,1);
+    float: left;
+
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,1);
+}
+ul.widgets li>header h3 {
+    color: rgba(255,255,255,1);
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 14px;
+    padding: 0 5px;
+    margin-top: 10px;
+}
+ul.widgets li section.widget-content {
+    padding: 20px;
+}
+/*
+*   BEGIN pagination
+*/
+div.pagination-outer {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+}
+div.pagination-wrapper{
+    display: table;   /* Allow the centering to work */
+    margin: 0 auto;
+}
+
+ul.pagination {
+    list-style: none;
+    padding-top: 20px;
+    margin: 0 auto;
+    /*
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #eee;
+    */
+}
+ul.pagination li {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    /*text-align: center;*/
+    width: 10px;
+    margin: 0 10px;
+    display: inline;
+    float: left;
+    /*position: relative;*/
+    height: 10px;
+    border: 1px solid black;
+}
+ul.pagination li.active {
+    background: black;
+}
+/*
+*   END pagination
+*/
 /*
 *   BEGIN CLOCK widget
 */
 ul.widgets li.clock {
-    width: 48%;
+    /*width: 48%;*/
+    font-size: 14px;
 }
 ul.widgets li.clock .hour {
 
@@ -112,20 +194,26 @@ ul.widgets li.clock .second {
 *   BEGIN LIST widget
 */
 ul.widgets li.list {
-    width: 48%;
+    /*width: 48%;*/
     padding: 0;
-    height: 300px;
+    font-size: 12px;
+    max-height: 300px;
+    overflow: scroll;
+}
+ul.widgets li.list section.widget-content {
+    padding: 0;
 }
 ul.widgets li.list li{
     border: none;
     border-bottom: 1px solid black;
     display: block;
-    padding: 10px;
+    padding: 7px;
     margin: 0;
 
 }
 ul.widgets li.list li:last-child {
     border-bottom: none;
+    margin-bottom: 0;
 }
 /*
 *   END LIST widget
@@ -134,7 +222,8 @@ ul.widgets li.list li:last-child {
 *   BEGIN SEARCH widget
 */
 ul.widgets li.search {
-    width: 48%;
+    /*width: 48%;*/
+    font-size: .7em;
 }
 ul.widgets li.search {
     outline: none;

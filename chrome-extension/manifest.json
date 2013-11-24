@@ -12,7 +12,7 @@
     ],
 
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["jquery-2.0.3.min.js","popup.js","background.js"],
         "persistent": true
     },
 
