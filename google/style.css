@@ -1,0 +1,24 @@
+
+/* black background */
+
+#main, #hdtb, #hdtbSum, #appbar, #mngb, .gb_cb, #hdtbSum {
+    background-color: #000 !important;
+    border: 0px !important;
+
+}
+
+/* no-logo */
+
+.gb_hb .gb_d {
+    background-image: none;
+}
+
+
+
+#clock, #timer {
+    float: right;
+    display: inline-block;
+    margin: 5px 20px 5px 0;
+    min-width: 100px;
+    color: #AAA;
+}

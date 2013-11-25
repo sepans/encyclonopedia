@@ -17,11 +17,14 @@
         "http://www.google.com/search*"
       ],
       "js" : ["jquery-2.0.3.min.js","contentscript.js"],
+      "css": ["style.css"],
       "run_at" : "document_idle",
       "all_frames" : false
     }
   ],
-  
+  "web_accessible_resources": [
+    "jquery-2.0.3.min.js"
+  ],
   "icons" : {
     "19" : "img/icon19.png",
     "38" : "img/icon38.png"
