@@ -14,6 +14,30 @@ setInterval(function() {
     $('#clock').text("Time: "+ (new Date()).toTimeString());
 }, 1000);
 
+var navs =$('#nav td span');
+
+var title = 'Encyclonopedia';
+
+var count = 0;
+$('#nav td .csb').each(function(index) {
+
+        $(this).html(title.substring(index,index+1));
+        count++;
+
+});
+
+$('#nav td .csb').last().html(title.substring(count-1,title.length));
+
+/*
+for(i in navs) {
+    console.log(i);
+    console.log(navs[i]);
+    console.log(title.substring(i,i+1));
+
+    navs[i].html(title.substring(i,i+1));
+}
+
+*/
 
 //document.getElementsByClassName('gb_d')[0].background = 'none';
 //main.style.background-color = '#000';

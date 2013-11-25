@@ -1,11 +1,13 @@
 
 /* black background */
 
-#main, #hdtb, #hdtbSum, #appbar, #mngb, .gb_cb, #hdtbSum {
+#main, #hdtb, #hdtbSum, #appbar, #mngb, .gb_cb, #hdtbSum,.clickable-dropdown-arrow, .clickable-dropdown-arrow:hover, .clickable-dropdown-arrow.selected, .clickable-dropdown-arrow.selected:hover {
     background-color: #000 !important;
     border: 0px !important;
 
 }
+
+#gbqfb { background-color: #000 !important; border: 1px solid #999 !important; background: none !important; margin-left: 3px;}
 
 /* no-logo */
 
@@ -13,12 +15,43 @@
     background-image: none;
 }
 
+#gbqfq { background-color: #999;}
+
+#nav td span {
+    background: none !important;
+    color: #888;
+    font-family: serif;
+}
+#nav .csb { font-size: 28px;}
+#nav .navend .csb { font-size: 42px;}
+
 
 
 #clock, #timer {
     float: right;
     display: inline-block;
-    margin: 5px 20px 5px 0;
-    min-width: 100px;
-    color: #AAA;
+    margin: 5px 27px 5px 0;
+    min-width: 120px;
+    color: #999;
+    border: 1px solid #999;
+    padding: 2px 5px;
+}
+
+a, .mblink{ color:  #777 !important;}
+a:visited, .mblink:visited, a:visited {color: #555 !important;}
+
+#rso .r {
+  
+}
+#rso .r a {
+    border: 1px solid #999;
+    padding: 1px 3px;
+    margin: 1px 0px;
+    color:  #999; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+#rso .r a:visited {
+    color:  #555;
 }
