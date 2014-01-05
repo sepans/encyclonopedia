@@ -1,16 +1,17 @@
 
 /* black background */
-
+/*
 #main, #hdtb, #hdtbSum, #appbar, #mngb, .gb_cb, #hdtbSum,.clickable-dropdown-arrow, .clickable-dropdown-arrow:hover, .clickable-dropdown-arrow.selected, .clickable-dropdown-arrow.selected:hover {
     background-color: #000 !important;
     border: 0px !important;
 
 }
+*/
 
 #gbqfb { background-color: #000 !important; border: 1px solid #999 !important; background: none !important; margin-left: 3px;}
 
 /* no-logo */
-
+.gb_la .gb_g,
 .gb_hb .gb_d {
     background-image: none;
 }

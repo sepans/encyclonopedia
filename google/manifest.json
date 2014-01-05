@@ -14,9 +14,10 @@
     {
       "matches" : [
         "https://www.google.com/search*",
-        "http://www.google.com/search*"
+        "http://www.google.com/search*",
+        "https://www.google.com/*"
       ],
-      "js" : ["jquery-2.0.3.min.js","contentscript.js"],
+      "js" : ["jquery-2.0.3.min.js","d3.js","db.js","viz.js","contentscript.js"],
       "css": ["style.css"],
       "run_at" : "document_idle",
       "all_frames" : false
